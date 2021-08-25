@@ -1,0 +1,11 @@
+<ul class="grid">
+    <li class="card" *ngFor="let album of listaDeAlbumes">
+        
+        <p>Título: {{album.title}}</p>
+        
+        <button (click)="routeToAlbumFotos(album.id)">Fotos</button>
+
+        <button (click)="routeToAlbumUsuario(album.userId)">Usuario</button>
+
+    </li>
+</ul>

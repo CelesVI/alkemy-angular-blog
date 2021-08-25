@@ -1,0 +1,16 @@
+<label for="search">Search: </label>
+<input type="text" [(ngModel)]="searchValue" class="form-control" id="search"/>
+
+<ul class="grid">
+    <li class="card" *ngFor="let post of listaDePosteos | searchfilter:searchValue">
+        
+        <p>Título: {{post.title}}</p>
+        
+        <p>Cuerpo: {{post.body}}</p>
+        
+        <button (click)="routeToPosteoUsuario(post.id)">Usuario</button>
+
+        <button (click)="routeToPosteoComentarios(post.id)">Comentarios</button>
+
+    </li>
+</ul>

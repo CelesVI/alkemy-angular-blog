@@ -1,0 +1,12 @@
+<ul class="grid">
+    <button (click)="goBack()">Volver</button>
+    <li class="card" *ngFor="let comentario of comentarioPosteo">
+        
+        <p>Nombre: {{comentario.name}}</p>
+
+        <p>Email: {{comentario.email}}</p>
+        
+        <p>Comentario: {{comentario.body}}</p>
+
+    </li>
+</ul>

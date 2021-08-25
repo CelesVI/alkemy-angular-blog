@@ -1,0 +1,16 @@
+<p>albumes-fotos works!</p>
+
+<ul class="grid">
+    <button (click)="goBack()">Volver</button>
+    <li *ngFor="let foto of fotosAlbum">
+        
+        <p>Nombre: {{foto.title}}</p>
+
+        <p>Foto: <img src={{foto.url}}></p>
+        
+        <p>Thumb: <img src={{foto.thumbnailUrl}}></p>
+
+        <button (click)="deleteFoto(foto)">Eliminar</button>
+
+    </li>
+</ul>

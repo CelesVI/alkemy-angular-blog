@@ -1,0 +1,20 @@
+<h3>Actualizar todo</h3>
+
+<button (click)="goBack()">Volver</button>
+
+<form [formGroup]="editarTodo" (ngSubmit)="guardarTodo()">
+    <label>Id</label>
+    <input type="text" formControlName="id">
+    <br>
+    <label>Title</label>
+    <input type="text" formControlName="title">
+    <br>
+    <label>Completed</label>
+    <!--<input type="text" formControlName="completed"> -->
+    <select name="pets" formControlName="completed">
+        <option value="false">false</option>
+        <option value="true">true</option>
+    </select>
+    <br>
+    <button type="submit">Actualizar</button>
+</form>

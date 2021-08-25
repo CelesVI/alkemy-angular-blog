@@ -1,0 +1,17 @@
+<label for="search">Search: </label>
+<input type="text" [(ngModel)]="searchValue" class="form-control" id="search"/>
+
+
+<ul class="grid">
+    <li class="card" *ngFor="let todo of listaDeTodos | searchfiltertodo:searchValue">
+
+        <p>Id del usuario: {{todo.userId}}</p>
+        
+        <p>Título: {{todo.title}}</p>
+        
+        <p>Completado: {{todo.completed}}</p>
+
+        <button (click)="routeToActualizarTodo(todo.id)">Editar</button>
+        
+    </li>
+</ul>

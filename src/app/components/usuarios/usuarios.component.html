@@ -1,0 +1,17 @@
+<ul class="grid">
+    <li class="card" *ngFor="let usuario of listaDeUsuarios"> 
+        
+        <p>Nombre: {{usuario.name}}</p>
+        
+        <p>Web: {{usuario.website}}</p>
+
+        <p>Empresa: {{usuario.company.name}}<br>&emsp;{{usuario.company.catchPhrase}}<br>&emsp;{{usuario.company.bs}}</p>
+
+        <button (click)="routeToUsuarioPosteos(usuario.id)">Posteos</button>
+
+        <button (click)="routeToUsuarioAlbumes(usuario.id)">Albumes</button>
+
+        <button (click)="routeToUsuarioTodos(usuario.id)">Todos</button>
+
+    </li>
+</ul>

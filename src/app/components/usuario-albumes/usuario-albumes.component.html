@@ -1,0 +1,8 @@
+<ul class="grid">
+    <button (click)="goBack()">Volver</button>
+    <li class="card" *ngFor="let album of listaDeAlbumesUsuario">
+        
+        <p>Título: {{album.title}}</p>
+
+    </li>
+</ul>

@@ -1,0 +1,10 @@
+.card{
+    list-style-type: none;
+    border: 2px solid blue;
+    background-color: beige;
+    margin-left: 0;
+    padding: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}

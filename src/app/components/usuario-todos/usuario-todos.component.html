@@ -1,0 +1,10 @@
+<ul class="grid">
+    <button (click)="goBack()">Volver</button>
+    <li class="card" *ngFor="let todo of listaDeTodosUsuario">
+        
+        <p>Título: {{todo.title}}</p>
+
+        <p>Completado: {{todo.completed}}</p>
+
+    </li>
+</ul>

@@ -1,0 +1,10 @@
+<ul class="grid">
+    <button (click)="goBack()">Volver</button>
+    <li class="card" *ngFor="let post of listaDePosteosUsuario">
+        
+        <p>Título: {{post.title}}</p>
+
+        <p>Cuerpo: {{post.body}}</p>
+
+    </li>
+</ul>
